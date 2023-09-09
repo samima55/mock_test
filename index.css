@@ -1,8 +1,15 @@
  body {
       background-color: black;
-      
       font-family: sans-serif;
+       color:  hsl(210, 11%, 47%);
 }
+h3 {
+    color: white;
+}
+p{
+    font-size: small;
+}
+
 .icon-container {
     width: 40px; 
     height: 40px; 
@@ -14,7 +21,7 @@
     margin-right: 10px; 
 }
 
-.review {
+.review,.thank-you-container {
     max-width: 300px;
     margin: 0 auto;
     padding: 20px; 
@@ -27,13 +34,7 @@
     transform: translate(-50%, -50%);
     content: left;
 }
-h3 {
-    color: white;
-}
 
-.review-p{
-    font-size: small;
-}
 
 .review input[type="radio"] {
     display: none; /* Hide the default radio input */
@@ -58,7 +59,7 @@ h3 {
     font-size: 16px;
     margin: 0 8px;
     cursor: pointer;
-    transition: background-color 0.3s ease; /* Add a transition for hover effect */
+    transition: background-color 0.3s ease; 
     position: relative; 
     display: flex; /* Use flex to center number vertically */
     justify-content: center; /* Center number horizontally */
@@ -66,11 +67,15 @@ h3 {
 }
 
 .review .rating-circle:hover {
-    background-color: hsl(12, 88%, 59%); /* Change background color on hover */
+    background-color: hsl(12, 88%, 59%); 
     color: white;
     border-color: hsl(12, 88%, 59%);
 }
-
+input[type=radio]:checked +label {
+    background-color:  hsl(12, 88%, 59%) !important;
+    color: white;
+    
+}
 
 .btn-review {
     width: 100%; /* Make the button as wide as the parent div */
@@ -88,8 +93,17 @@ h3 {
     background-color: hsl(0, 0%, 100%);
     color:  hsl(12, 88%, 59%);
 }
+/* Initially hide the "Thank You" container */
+.thank-you-container {
+    display: none;
+}
 
-.img-thankyou{
+.choosen{
+    color:hsl(12, 88%, 59%);
+    background-color: hsl(212, 18%, 28%);
+    border-radius: 25px;
+    width: 70%;
+    margin-left: 15%;
     
 }
 
