@@ -5,9 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Interactive rating component</title>
+  <link rel="stylesheet" type="text/css" href="index.css">
 
+  <title>Frontend Mentor | Interactive rating component</title>
+    
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:ital@1&family=Pacifico&family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
@@ -17,16 +19,42 @@
 <body>
 
   <!-- Rating state start -->
+ <div class="review">
+  
+   <h3 class="title">How did we do?</h3>
+   <p class="review-p"> Please let us know how we did with your support request. All feedback is appreciated 
+    to help us improve our offering!</p>
+    <form id="rating-form" class="rating-container">
+      <label class="rating-circle">
+          <input type="radio" name="rating" value="1">
+          1
+      </label>
 
-  How did we do?
+      <label class="rating-circle">
+          <input type="radio" name="rating" value="2">
+          2
+      </label>
 
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
+      <label class="rating-circle">
+          <input type="radio" name="rating" value="3">
+          3
+      </label>
 
-  1 2 3 4 5
+      <label class="rating-circle">
+          <input type="radio" name="rating" value="4">
+          4
+      </label>
 
-  Submit
+      <label class="rating-circle">
+          <input type="radio" name="rating" value="5">
+          5
+      </label>
+  </form>
 
+    
+
+  <button class="btn-review"> Submit</button>
+</div>
   <!-- Rating state end -->
 
   <!-- Thank you state start -->

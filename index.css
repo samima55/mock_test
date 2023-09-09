@@ -1,0 +1,65 @@
+ body {
+      background-color: black;
+      
+      font-family: sans-serif;
+}
+
+
+.review {
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 20px; 
+    text-align: left; 
+    border-radius: 10px; 
+    background-color: hsl(213, 19%, 18%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    content: left;
+}
+h3 {
+    color: white;
+}
+
+.review-p{
+    font-size: small;
+}
+
+.review input[type="radio"] {
+    display: none; /* Hide the default radio input */
+}
+.rating-container {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+
+}
+.review .rating-circle {
+    color:  hsl(210, 11%, 47%); ;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: hsl(212, 18%, 28%);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    font-size: 16px;
+    margin: 0 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Add a transition for hover effect */
+}
+
+.review .rating-circle:hover {
+    background-color: hsl(12, 88%, 59%); /* Change background color on hover */
+    color: white;
+    border-color: hsl(12, 88%, 59%);
+}
+/* Additional styles can be added as needed */
+
+
+.attribution {
+     font-size: 11px;
+      text-align: center; 
+     color: hsl(228, 45%, 44%); 
+}
