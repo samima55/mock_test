@@ -3,7 +3,16 @@
       
       font-family: sans-serif;
 }
-
+.icon-container {
+    width: 40px; 
+    height: 40px; 
+    background-color: hsl(212, 18%, 28%);
+    border-radius: 50%;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px; 
+}
 
 .review {
     max-width: 300px;
@@ -30,24 +39,30 @@ h3 {
     display: none; /* Hide the default radio input */
 }
 .rating-container {
+    width: 100%;
     display: flex; 
-    justify-content: center; 
+    justify-content: space-between; 
     align-items: center; 
-
+    margin-top: 25px;
 }
 .review .rating-circle {
     color:  hsl(210, 11%, 47%); ;
     display: inline-block;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     background-color: hsl(212, 18%, 28%);
     border-radius: 50%;
     text-align: center;
+    align-items: center;
     line-height: 30px;
     font-size: 16px;
     margin: 0 8px;
     cursor: pointer;
     transition: background-color 0.3s ease; /* Add a transition for hover effect */
+    position: relative; 
+    display: flex; /* Use flex to center number vertically */
+    justify-content: center; /* Center number horizontally */
+    align-items: center; 
 }
 
 .review .rating-circle:hover {
@@ -55,6 +70,32 @@ h3 {
     color: white;
     border-color: hsl(12, 88%, 59%);
 }
+
+
+.btn-review {
+    width: 100%; /* Make the button as wide as the parent div */
+    border-radius: 25px; /* Add border-radius of 25px */
+    background-color: hsl(12, 88%, 59%);
+    color: white;
+    border: none;
+    font-size: 16px;
+    padding: 10px 0; /* Add padding for vertical alignment */
+    cursor: pointer;
+    margin-top: 25px;
+}
+
+.btn-review:hover {
+    background-color: hsl(0, 0%, 100%);
+    color:  hsl(12, 88%, 59%);
+}
+
+
+
+
+
+
+
+
 /* Additional styles can be added as needed */
 
 
